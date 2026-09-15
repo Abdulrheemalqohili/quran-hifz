@@ -1,0 +1,204 @@
+<!-- إنشاء واجهة مشروع متابعة حفظ القرآن الكريم -->
+
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#198754">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        متابعة حفظ القرآن الكريم
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="quran.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- رأس المشروع -->
+
+    <header class="quran-header">
+
+        <a
+            href="../index.html"
+            class="back-link"
+        >
+            ← العودة للموقع
+        </a>
+
+        <h1>
+            متابعة حفظ القرآن الكريم
+        </h1>
+
+        <p>
+            تابع السور التي أتممت حفظها واعرف مستوى تقدمك.
+        </p>
+
+    </header>
+
+
+    <!-- المحتوى الرئيسي -->
+
+    <main>
+
+
+        <!-- بطاقة التقدم -->
+
+        <section class="progress-card">
+
+            <h2>
+                تقدم الحفظ
+            </h2>
+
+            <div class="progress-info">
+
+                <strong>
+                    0%
+                </strong>
+
+                <span>
+                    0 من 114 سورة
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- إحصائيات الحفظ -->
+
+        <section class="stats">
+
+            <article>
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    سورة محفوظة
+                </span>
+
+            </article>
+
+
+            <article>
+
+                <strong>
+                    114
+                </strong>
+
+                <span>
+                    سورة متبقية
+                </span>
+
+            </article>
+
+
+            <article>
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    عدد الآيات المحفوظة
+                </span>
+
+            </article>
+
+
+            <article>
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    الأجزاء المكتملة
+                </span>
+
+            </article>
+
+        </section>
+
+
+        <!-- سور القرآن الكريم -->
+
+        <section class="surahs">
+
+            <h2>
+                سور القرآن الكريم
+            </h2>
+
+            <div
+                class="surah-list"
+                id="surahList"
+            ></div>
+
+        </section>
+
+
+        <!-- أجزاء القرآن الكريم -->
+
+        <section class="juz-section">
+
+            <h2>
+                أجزاء القرآن الكريم
+            </h2>
+
+            <div
+                class="juz-list"
+                id="juzList"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- تذييل المشروع -->
+
+    <footer>
+
+        <p>
+            مشروع متابعة حفظ القرآن الكريم
+        </p>
+
+    </footer>
+
+
+    <!-- ملفات JavaScript -->
+
+    <script src="quran-data.js"></script>
+
+    <script src="juz-data.js"></script>
+
+    <script src="quran.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+}
+</script>
+</body>
+
+</html>
