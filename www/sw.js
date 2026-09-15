@@ -3,7 +3,7 @@
 const CACHE_NAME = "quran-app-v2";
 
 const FILES_TO_CACHE = [
-    "./quran.html",
+    "./index.html",
     "./quran.css",
     "./quran.js",
     "./quran-data.js",

@@ -1,7 +1,7 @@
 {
   "name": "تابع تقدمك في حفظ القرآن الكريم",
   "short_name": "حفظ القرآن",
-  "start_url": "./quran.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#198754",
